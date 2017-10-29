@@ -1,0 +1,30 @@
+{
+  "name": "stockindex",
+  "version": "1.0.0",
+  "description": "Stock Index, of famous World Stock Exchanges",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kauteetech/StockIndex.git"
+  },
+  "keywords": [
+    "stock"
+  ],
+  "author": "Ravikumar Govindaraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kauteetech/StockIndex/issues"
+  },
+  "homepage": "https://github.com/kauteetech/StockIndex#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
