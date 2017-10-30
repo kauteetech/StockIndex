@@ -19,25 +19,6 @@ $.ajax({
 });
 
 $.ajax({
-    url: 'https://globalindices.xignite.com/xglobalindices.json/GetDelayedIndicesValue?IdentifierType=Symbol&Identifiers=BSE.INDBVMF&_token=A3023B3972F449D1A0E30EFB26D7E238',
-    dataType: 'json',
-    type: 'get',
-    cache: true,
-    success: function(data) {
-        console.log(data);
-        $(data.Index).each(function(index, value){
-            $("#bsesym").html(value.Symbol);
-        });
-
-        $(data.Value).each(function(index, value){
-            $("#bselast").html(value.Last);
-            $("#bsechange").html(value.ChangeFromOpen);
-        });
-    }
-
-});
-
-$.ajax({
     url: 'https://globalindices.xignite.com/xglobalindices.json/GetDelayedIndicesValue?IdentifierType=Symbol&Identifiers=SPX.INDCBSX&_token=A3023B3972F449D1A0E30EFB26D7E238',
     dataType: 'json',
     type: 'get',
